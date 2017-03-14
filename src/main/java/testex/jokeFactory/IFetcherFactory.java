@@ -5,10 +5,13 @@
  */
 package testex.jokeFactory;
 
+import java.util.List;
+
 /**
  *
  * @author martin
  */
 public interface IFetcherFactory {
-    
+  List<String> getAvailableTypes();
+  List<IJokeFetcher> getJokeFetchers(String jokesToFetch);
 }
